@@ -85,7 +85,7 @@ class MultiqcModule(BaseMultiqcModule):
         self.status_colours = { 'pass': '#5cb85c', 'warn': '#f0ad4e', 'fail': '#d9534f', 'default': '#999' }
         
         # Add to the general statistics table
-        self.fastqc_general_stats()
+        # self.fastqc_general_stats()
         
         # Add the statuses to the intro for multiqc_fastqc.js JavaScript to pick up
         statuses = dict()
