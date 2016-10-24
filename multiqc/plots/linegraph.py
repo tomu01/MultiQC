@@ -56,7 +56,7 @@ def plot (data, pconfig={}):
     plotdata = list()
     for d in data:
         thisplotdata = list()
-        for s in sorted(d.keys()):
+        for s in d.keys():
             pairs = list()
             maxval = 0
             if 'categories' in pconfig:
