@@ -125,6 +125,7 @@ module_order:
     - 'quast'
     - 'snpeff'
     - 'qualimap'
+    - 'rnaseq_az'
     - 'bcftools'
     - 'featureCounts'
     - 'methylQA'
@@ -149,3 +150,5 @@ module_order:
     - 'skewer'
     - 'fastq_screen'
     - 'fastqc'
+    - 'targqc'
+    - 'bcl2fastq'
