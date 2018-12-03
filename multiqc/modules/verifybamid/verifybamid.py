@@ -133,7 +133,7 @@ class MultiqcModule(BaseMultiqcModule):
 
 		# add the FREEMIX column. set the title and description
 		headers['FREEMIX'] = dict(self.col_config_defaults, **{
-			'title': 'Contamination (S)',
+			'title': 'Contam',
 			'description': 'VerifyBamID: FREEMIX -   Sequence-only estimate of contamination.',
 		})
 
