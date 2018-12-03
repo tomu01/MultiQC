@@ -284,9 +284,16 @@ def make_table (dt):
 
     # Build the table body
     html += '<tbody>'
-    t_row_keys = t_rows.keys()
-    if dt.pconfig.get('sortRows') is not False:
-        t_row_keys = sorted(t_row_keys)
+    t_row_keys = list(t_rows.keys())
+    try:
+        reference_samples = config.umccr.get('reference_samples', [])
+    except:
+        reference_samples = []
+    if reference_samples:  # we want the reference samples to go to the end
+        sample_t_row_keys = sorted([r for r in t_row_keys if r not in reference_samples])
+        ref_t_row_keys = [r for r in reference_samples if r in t_row_keys]
+        t_row_keys = sample_t_row_keys + ref_t_row_keys
+
     for s_name in t_row_keys:
         html += '<tr>'
         # Sample name row header
