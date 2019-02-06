@@ -103,7 +103,7 @@ class MultiqcModule(BaseMultiqcModule):
             'min': 0,
             'suffix': '%',
             'format': '{:,.2f}',
-            'scale': 'RdYlGn'
+            'scale': 'OrRd-rev'
         }
         headers['concordance_markers'] = {
             'title': 'Markers',
@@ -117,7 +117,7 @@ class MultiqcModule(BaseMultiqcModule):
             'min': 0,
             'suffix': '%',
             'format': '{:,.3f}',
-            'scale': 'RdYlBu-rev'
+            'scale': 'OrRd'
         }
         headers['contamination_normal'] = {
             'title': 'N Contamination',
@@ -126,7 +126,7 @@ class MultiqcModule(BaseMultiqcModule):
             'min': 0,
             'suffix': '%',
             'format': '{:,.3f}',
-            'scale': 'RdYlBu-rev'
+            'scale': 'OrRd'
         }
         headers['contamination_tumor'] = {
             'title': 'T Contamination',
@@ -135,6 +135,6 @@ class MultiqcModule(BaseMultiqcModule):
             'min': 0,
             'suffix': '%',
             'format': '{:,.3f}',
-            'scale': 'RdYlBu-rev'
+            'scale': 'OrRd'
         }
         self.general_stats_addcols(self.conpair_data, headers)
