@@ -29,6 +29,5 @@ deploy:
   # Deploy to Anaconda.org
   - provider: script
     script:
-      conda convert --platform osx-64 $HOME/miniconda/conda-bld/linux-64/${PACKAGE_NAME}-*.tar.bz2 --output-dir $HOME/miniconda/conda-bld/ &&
-      anaconda -t ${ANACONDA_TOKEN} upload $HOME/miniconda/conda-bld/**/${PACKAGE_NAME}-*.tar.bz2
+      anaconda -t ${ANACONDA_TOKEN} upload $HOME/miniconda/conda-bld/noarch/${PACKAGE_NAME}-*.tar.bz2
     skip_cleanup: true
