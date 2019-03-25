@@ -23,7 +23,7 @@ install:
   - conda install --use-local ${PACKAGE_NAME}
 
 script:
-  - multiqc --lint data/modules/
+  - multiqc --version
 
 deploy:
   # Deploy to Anaconda.org
