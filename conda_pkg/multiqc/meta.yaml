@@ -1,10 +1,11 @@
+{% set data=load_setup_py_data() %}
+
 package:
   name: multiqc
   version: "1.8dev"
 
 source:
-  url: https://github.com/ewels/MultiQC/archive/v1.7.tar.gz
-  sha256: 1a6bea211ab584164a6c7513812ede57b28712bc528bd34cc5f1a581e7410644
+  path: ../../
 
 build:
   number: 0
@@ -119,7 +120,6 @@ test:
 
   commands:
     - multiqc --version
-    - multiqc .
 
 about:
   home: http://multiqc.info
