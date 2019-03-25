@@ -44,7 +44,7 @@ install_requires = [
         'pyyaml>=4',
         'requests',
         'simplejson',
-        'spectra>=0.0.10'
+        'spectra'
     ]
 
 setup(
