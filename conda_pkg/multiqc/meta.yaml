@@ -23,7 +23,7 @@ requirements:
     - jinja2 >=2.9
     - lzstring >=1.0.4
     - markdown
-    - matplotlib
+    - matplotlib <3.0.0,>=2.1.1
     - numpy
     - pyyaml
     - requests
